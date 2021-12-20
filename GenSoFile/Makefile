@@ -10,7 +10,7 @@ LINUX_ARCH = amd64
 docker-env:
 	docker run -it -v $(pwd):/go/src --name plugintest golang:1.15.6 /bin/bash
 
-build-mod: 
+build-mod:
 	GO111MODULE=on GOOS=$(LINUX_OS) GOARCH=$(LINUX_ARCH) go build -trimpath -buildmode=plugin -gcflags='all=-N -l' -o ./$(OUTPUT).so $(TARGET)
 
 build-mod-vendor:
