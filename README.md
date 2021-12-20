@@ -14,7 +14,7 @@
 * GenSofile proj:
 
 ```
-    make build-mod => 產生so檔案 (使用go mod)
+     make build-mod => 產生so檔案 (使用go mod)
 ```
 ```
      make build-mod-vendor => 產生so檔案 (使用go mod vendor)
