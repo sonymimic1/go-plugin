@@ -5,3 +5,8 @@ type Total struct {
 	B        int
 	Totalsum int
 }
+
+type InputExtraData struct {
+	A int
+	B int
+}
